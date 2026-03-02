@@ -9,23 +9,23 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jet
 export const metadata: Metadata = {
   title: 'Video Splitter',
   description: 'Split videos into segments right from your Android device',
-  manifest: '/manifest.json',
+  manifest: '/videosplitter-nextjs/manifest.json',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/videosplitter-nextjs/icon-light-32x32.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/videosplitter-nextjs/icon-dark-32x32.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/videosplitter-nextjs/icon.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/videosplitter-nextjs/apple-icon.png',
   },
 }
 

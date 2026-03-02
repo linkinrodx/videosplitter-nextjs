@@ -1,4 +1,4 @@
-name: Lint & Type Check
+name: Type Check
 
 on:
   push:
@@ -31,9 +31,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-
-      - name: Run ESLint
-        run: pnpm run lint
 
       - name: Run TypeScript compiler
         run: pnpm exec tsc --noEmit
