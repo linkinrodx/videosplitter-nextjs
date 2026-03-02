@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "echo 'ESLint not configured'"
+    "lint": "echo 'ESLint not configured'",
+    "icons:convert": "node scripts/convert-svg-to-png.js"
   },
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.12.15",

@@ -1,5 +1,5 @@
 const CACHE_NAME = "video-splitter-v1"
-const PRECACHE_URLS = ["/", "/manifest.json", "/icons/icon-192x192.svg", "/icons/icon-512x512.svg"]
+const PRECACHE_URLS = ["/videosplitter-nextjs/", "/videosplitter-nextjs/manifest.json", "/videosplitter-nextjs/icons/icon-192x192.svg", "/videosplitter-nextjs/icons/icon-512x512.svg"]
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

@@ -11,7 +11,7 @@ export function ServiceWorkerRegistration() {
 
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker
-        .register("/sw.js")
+        .register("/videosplitter-nextjs/sw.js")
         .catch(() => {
           // Service worker registration failed silently
         })
