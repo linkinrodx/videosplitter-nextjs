@@ -22,7 +22,7 @@ A Progressive Web App (PWA) for splitting videos into segments directly in your 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/videosplitter-react.git
+git clone https://github.com/linkinrodx/videosplitter-react.git
 cd videosplitter-react
 
 # Install dependencies
@@ -162,8 +162,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 1. Check the [Troubleshooting](#troubleshooting) section
-2. Search [existing issues](https://github.com/yourusername/videosplitter-react/issues)
-3. Create a [new issue](https://github.com/yourusername/videosplitter-react/issues/new)
+2. Search [existing issues](https://github.com/linkinrodx/videosplitter-react/issues)
+3. Create a [new issue](https://github.com/linkinrodx/videosplitter-react/issues/new)
 
 ---
 
