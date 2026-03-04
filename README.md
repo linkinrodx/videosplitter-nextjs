@@ -2,6 +2,8 @@
 
 A Progressive Web App (PWA) for splitting videos into segments directly in your browser. Powered by FFmpeg running client-side, no server required.
 
+**🚀 [Try the Live Demo](https://linkinrodx.github.io/videosplitter-nextjs/)** - No installation required!
+
 ## Features
 
 - 🎬 **Client-Side Processing** - All video splitting happens in your browser using FFmpeg
@@ -11,19 +13,30 @@ A Progressive Web App (PWA) for splitting videos into segments directly in your 
 - 💾 **Batch Download** - Download all segments at once or individually
 - 🎨 **Responsive UI** - Works seamlessly on desktop, tablet, and mobile devices
 
-## Getting Started
+## Quick Start
 
-### Prerequisites
+### Try Online (No Installation)
+Open the live demo: **[https://linkinrodx.github.io/videosplitter-nextjs/](https://linkinrodx.github.io/videosplitter-nextjs/)**
+
+Then:
+1. Tap the "Install" button to add to your home screen
+2. Select a video
+3. Choose segment duration
+4. Download your segments
+
+### Local Development
+
+#### Prerequisites
 
 - Node.js 18+ or 20+
 - pnpm (recommended) or npm
 
-### Installation
+#### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/linkinrodx/videosplitter-react.git
-cd videosplitter-react
+git clone https://github.com/linkinrodx/videosplitter-nextjs.git
+cd videosplitter-nextjs
 
 # Install dependencies
 pnpm install
@@ -36,10 +49,11 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Usage
 
-1. **Upload a Video** - Drag and drop or click to select a video file (MP4, WebM, etc.)
-2. **Specify Duration** - Enter the duration in seconds for each segment
-3. **Process** - Click "Split Video" and watch the progress
-4. **Download** - Download individual segments or all at once
+1. **Visit the app**: [https://linkinrodx.github.io/videosplitter-nextjs/](https://linkinrodx.github.io/videosplitter-nextjs/)
+2. **Upload a Video** - Drag and drop or click to select a video file (MP4, WebM, MOV, AVI supported)
+3. **Specify Duration** - Enter the duration in seconds for each segment
+4. **Process** - Click "Split Video" and watch the progress
+5. **Download** - Download individual segments or all at once
 
 ## Tech Stack
 
@@ -162,8 +176,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 1. Check the [Troubleshooting](#troubleshooting) section
-2. Search [existing issues](https://github.com/linkinrodx/videosplitter-react/issues)
-3. Create a [new issue](https://github.com/linkinrodx/videosplitter-react/issues/new)
+2. Search [existing issues](https://github.com/linkinrodx/videosplitter-nextjs/issues)
+3. Create a [new issue](https://github.com/linkinrodx/videosplitter-nextjs/issues/new)
 
 ---
 
