@@ -4,7 +4,7 @@
   "short_name": "VidSplit",
   "description": "Split videos into segments right from your Android device",
   "start_url": "/videosplitter-nextjs/",
-  "display": "standalone",
+  "display": "minimal-ui",
   "orientation": "portrait",
   "background_color": "#1a1a2e",
   "theme_color": "#1a1a2e",
@@ -51,5 +51,6 @@
   ],
   "categories": ["utilities", "productivity"],
   "lang": "en",
-  "dir": "ltr"
+  "dir": "ltr",
+  "display_override": ["fullscreen", "minimal-ui", "standalone"]
 }
