@@ -362,6 +362,9 @@ export function VideoSplitter() {
         <p className="text-center text-xs text-muted-foreground">
           All processing happens locally on your device. No files are uploaded to any server.
         </p>
+        <p className="text-center text-xs text-muted-foreground mt-2">
+          v1.0.0
+        </p>
       </footer>
     </div>
   )
