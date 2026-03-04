@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     ],
     apple: '/videosplitter-nextjs/apple-icon.png',
   },
+  other: {
+    'google': 'notranslate',
+  },
 }
 
 export const viewport: Viewport = {
