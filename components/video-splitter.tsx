@@ -19,6 +19,7 @@ import { ProcessingStatus } from "@/components/processing-status"
 import { SplitResults, type VideoSegment } from "@/components/split-results"
 import { ServiceWorkerRegistration } from "@/components/sw-register"
 import { InstallPrompt } from "@/components/install-prompt"
+import { APP_VERSION } from "@/lib/version"
 
 type AppState = "idle" | "loading-ffmpeg" | "processing" | "done" | "error"
 
@@ -363,7 +364,7 @@ export function VideoSplitter() {
           All processing happens locally on your device. No files are uploaded to any server.
         </p>
         <p className="text-center text-xs text-muted-foreground mt-2">
-          v1.0.0
+          v{APP_VERSION}
         </p>
       </footer>
     </div>
