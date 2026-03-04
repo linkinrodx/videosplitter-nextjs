@@ -1,8 +1,3 @@
-import fs from 'fs'
-import path from 'path'
-
-const packageJson = JSON.parse(
-  fs.readFileSync(path.join(process.cwd(), 'package.json'), 'utf-8')
-)
-
-export const APP_VERSION = packageJson.version
+// Version is auto-incremented by GitHub Actions workflow
+// Do not edit manually - managed by .github/workflows/auto-increment-version.yml
+export const APP_VERSION = "1.0.1"

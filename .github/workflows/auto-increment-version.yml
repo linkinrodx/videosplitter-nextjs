@@ -27,20 +27,24 @@ jobs:
         run: |
           node -e "
             const fs = require('fs');
-            const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-            const [major, minor, patch] = pkg.version.split('.');
+            const versionFile = 'lib/version.ts';
+            const content = fs.readFileSync(versionFile, 'utf8');
+            const match = content.match(/export const APP_VERSION = \"(\d+\.\d+\.\d+)\"/);
+            if (!match) throw new Error('Could not find version in lib/version.ts');
+            
+            const [major, minor, patch] = match[1].split('.');
             const newPatch = parseInt(patch) + 1;
             const newVersion = \`\${major}.\${minor}.\${newPatch}\`;
-            pkg.version = newVersion;
-            fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2) + '\n');
-            console.log('::set-output name=new_version::\${newVersion}');
-            console.log('New version: \${newVersion}');
+            const newContent = content.replace(/export const APP_VERSION = \"[^\"]+\"/, \`export const APP_VERSION = \"\${newVersion}\"\`);
+            
+            fs.writeFileSync(versionFile, newContent);
+            console.log('New version: ' + newVersion);
           "
 
       - name: Commit and push version bump
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add package.json
+          git add lib/version.ts
           git commit -m "chore: auto-increment version" || echo "No changes to commit"
           git push || echo "Failed to push"
